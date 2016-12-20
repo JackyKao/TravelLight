@@ -1,7 +1,7 @@
 function DifFood()
 {
   document.getElementById('wordcloud').innerHTML='';
-d3.csv("https://jackykao.github.io/TravelLight/DifFood.csv", 
+  d3.csv("https://jackykao.github.io/TravelLight/DifFood.csv", 
   function(data)
   {
     d3.wordcloud()
@@ -13,7 +13,8 @@ d3.csv("https://jackykao.github.io/TravelLight/DifFood.csv",
 }
 function JapanFood()
 {
-d3.csv("https://jackykao.github.io/TravelLight/JapanFood.csv", 
+  document.getElementById('wordcloud').innerHTML='';
+  d3.csv("https://jackykao.github.io/TravelLight/JapanFood.csv", 
   function(data)
   {
     d3.wordcloud()
@@ -25,7 +26,8 @@ d3.csv("https://jackykao.github.io/TravelLight/JapanFood.csv",
 }
 function otherFood()
 {
-d3.csv("https://jackykao.github.io/TravelLight/otherFood.csv", 
+  document.getElementById('wordcloud').innerHTML='';
+  d3.csv("https://jackykao.github.io/TravelLight/otherFood.csv", 
   function(data)
   {
     d3.wordcloud()
@@ -37,7 +39,8 @@ d3.csv("https://jackykao.github.io/TravelLight/otherFood.csv",
 }
 function VegFood()
 {
-d3.csv("https://jackykao.github.io/TravelLight/VegFood.csv", 
+  document.getElementById('wordcloud').innerHTML='';
+  d3.csv("https://jackykao.github.io/TravelLight/VegFood.csv", 
   function(data)
   {
     d3.wordcloud()
