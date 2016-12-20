@@ -1,5 +1,6 @@
 function DifFood()
 {
+  document.getElementById('wordcloud').innerHTML='';
 d3.csv("https://jackykao.github.io/TravelLight/DifFood.csv", 
   function(data)
   {
