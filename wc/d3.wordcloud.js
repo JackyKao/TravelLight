@@ -89,7 +89,7 @@
           return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
         })
         .style("font-size", function(d) {
-          return d.size + "%";
+          return d.size + "px";
         });
       text.enter().append("text")
         .attr("text-anchor", "middle")
@@ -97,7 +97,7 @@
           return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
         })
         .style("font-size", function(d) {
-          return d.size + "%";
+          return d.size + "px";
         })
         .style("opacity", 1e-6)
         .transition()
