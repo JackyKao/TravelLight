@@ -67,12 +67,10 @@
     }
 
     function draw(data, bounds) {
-      var w = "100%",
+      var w = layout.size()[0],
           h = layout.size()[1];
-      //var w = layout.size()[0],
-      //    h = layout.size()[1];
 
-      svg.attr("width", w).attr("height", h);
+      svg.attr("width", 100%).attr("height", h);
 
       scaling = bounds ? Math.min(
         w / Math.abs(bounds[1].x - w / 2),
