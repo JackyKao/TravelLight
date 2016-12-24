@@ -70,7 +70,7 @@
       var w = layout.size()[0],
           h = layout.size()[1];
 
-      svg.attr("width", "100%").attr("height", h);
+      svg.attr("width", "100%").attr("height", "100%");
 
       scaling = bounds ? Math.min(
         w / Math.abs(bounds[1].x - w / 2),
