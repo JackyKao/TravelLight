@@ -5,7 +5,7 @@ function DifFood()
   function(data)
   {
     d3.wordcloud()
-      .size(parseInt(d3.select("#wordcloud").style("width"), 10), 300])
+      .size(parseInt(d3.select(".AsterPlot").style("width"), 10), 300])
       .fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"]))
       .words(data)
       .start();
