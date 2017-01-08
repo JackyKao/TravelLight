@@ -70,7 +70,7 @@
       var w = layout.size()[0],
           h = layout.size()[1];
 
-      svg.attr("width", "parseInt(d3.select(".AsterPlot").style("width"), 10)").attr("height", h);
+      svg.attr("width", "w").attr("height", h);
 
       scaling = bounds ? Math.min(
         w / Math.abs(bounds[1].x - w / 2),
