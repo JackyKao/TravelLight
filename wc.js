@@ -5,7 +5,7 @@ function DifFood()
   function(data)
   {
     d3.wordcloud()
-      .size([parseInt(d3.select(".AsterPlot").style("width"), 10), 300])
+      .size([parseInt(d3.select("#wordcloud").style("width"), 10), 300])
       .fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"]))
       .words(data)
       .start();
@@ -18,7 +18,7 @@ function JapanFood()
   function(data)
   {
     d3.wordcloud()
-      .size([500, 300])
+      .size([d3.select("#wordcloud").style("width"), 10), 300])
       .fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"]))
       .words(data)
       .start();
@@ -31,7 +31,7 @@ function otherFood()
   function(data)
   {
     d3.wordcloud()
-      .size([500, 300])
+      .size([d3.select("#wordcloud").style("width"), 10), 300])
       .fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"]))
       .words(data)
       .start();
@@ -44,7 +44,7 @@ function VegFood()
   function(data)
   {
     d3.wordcloud()
-      .size([500, 300])
+      .size([d3.select("#wordcloud").style("width"), 10), 300])
       .fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"]))
       .words(data)
       .start();
@@ -57,7 +57,7 @@ function sweetFood()
   function(data)
   {
     d3.wordcloud()
-      .size([500, 300])
+      .size([d3.select("#wordcloud").style("width"), 10), 300])
       .fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"]))
       .words(data)
       .start();
