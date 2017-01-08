@@ -63,3 +63,28 @@ function sweetFood()
       .start();
   });
 }
+function sweetFood()
+{
+  document.getElementById('wordcloud').innerHTML='';
+  d3.csv("https://jackykao.github.io/TravelLight/sweetFood.csv", 
+  function(data)
+  {
+    d3.wordcloud()
+      .size([parseInt(d3.select("#wordcloud").style("width"), 10), 300])
+      .fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"]))
+      .words(data)
+      .start();
+  });
+}function ChineseFood()
+{
+  document.getElementById('wordcloud').innerHTML='';
+  d3.csv("https://jackykao.github.io/TravelLight/ChineseFood.csv", 
+  function(data)
+  {
+    d3.wordcloud()
+      .size([parseInt(d3.select("#wordcloud").style("width"), 10), 300])
+      .fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"]))
+      .words(data)
+      .start();
+  });
+}
